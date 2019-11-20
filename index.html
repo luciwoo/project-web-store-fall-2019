@@ -55,17 +55,16 @@
 
         <!-- Filtering product form -->
         <form>
-          <h2>Filters</h2>
           <fieldset class="sort">
-            <label for="sort">Show</label>
+          <Legend>Filter</Legend>
             <select name="sort" id="sort">
               <option value="price-high">Price, highest to lowest</option>
               <option value="price-low">Price, lowest to highest</option>
               <option value="newest">Newest releases</option>
             </select>
           </fieldset>
-          <fieldset class="color">
-            <legend>Scent</legend>
+          <fieldset class="scent">
+            <label for="scent">Scent</label>
             <ul>
               <li><input type="checkbox" name="Scent" value="Lavender" id="Lavender"> <label for="Lavender">Lavender</label></li>
               <li><input type="checkbox" name="Scent" value="Honey" id="Honey"> <label for="Honey">Honey</label></li>
@@ -73,28 +72,28 @@
             </ul>
           </fieldset>
           <fieldset class="ratings">
-            <legend>Ratings (above)</legend>
+            <legend>Ratings</legend>
             <ol>
               <li>
-                <input type="radio" name="rating" value="4" id="aboveFour">
+                <input type="checkbox" name="rating" value="4" id="aboveFour">
                 <label for="aboveFour">
                   <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
                 </label>
               </li>
               <li>
-                <input type="radio" name="rating" value="3" id="aboveThree">
+                <input type="checkbox" name="rating" value="3" id="aboveThree">
                 <label for="aboveThree">
                   <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
                 </label>
               </li>
               <li>
-                <input type="radio" name="rating" value="2" id="aboveTwo">
+                <input type="checkbox" name="rating" value="2" id="aboveTwo">
                 <label for="aboveTwo">
                   <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
                 </label>
               </li>
               <li>
-                <input type="radio" name="rating" value="1" id="aboveOne">
+                <input type="checkbox" name="rating" value="1" id="aboveOne">
                 <label for="aboveOne">
                   <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
                 </label>
@@ -110,7 +109,10 @@
           <header class="product-image">
             <img src="img/bathbombs.jpg" alt="bathbombs Image">
           </header>
-          <h2 class="name">Dreamy Bathbomb</h3>
+          <h2 class="name">Dreamy Bathbomb</h3><dl>
+                <dt>Rating</dt>
+                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+              </dl>
           <p class="subtext">You can golightly with this one or all in.Brazilian orange and cinnamon leaf oils. However you decide to go, you’ll feel amazing.</p>
           <form>
             <fieldset>
@@ -128,10 +130,7 @@
             </fieldset>
 
             <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
+              
               <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
               <button type="button"><span class="material-icons">favorite</span></button>
               <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
