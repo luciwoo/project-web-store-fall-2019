@@ -37,6 +37,7 @@
 
       <!-- Search for a product (non-functional) -->
       <form>
+        <label>
           <input type="text" name="search" placeholder="search">
         </label>
         <button type="button"><span class="material-icons">search</span></button>
@@ -64,7 +65,7 @@
             </select>
           </fieldset>
           <fieldset class="scent">
-            <label for="scent">Scent</label>
+            <legend for="scent">Scent</Legend>
             <ul>
               <li><input type="checkbox" name="Scent" value="Lavender" id="Lavender"> <label for="Lavender">Lavender</label></li>
               <li><input type="checkbox" name="Scent" value="Honey" id="Honey"> <label for="Honey">Honey</label></li>
@@ -109,10 +110,10 @@
           <header class="product-image">
             <img src="img/bathbombs.jpg" alt="bathbombs Image">
           </header>
-          <h2 class="name">Dreamy Bathbomb</h3><dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
+          <h2 class="name">Dreamy Bathbomb</h3>
+          <dl>
+            <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
+          </dl>
           <p class="subtext">You can golightly with this one or all in.Brazilian orange and cinnamon leaf oils. However you decide to go, you’ll feel amazing.</p>
           <form>
             <fieldset>
@@ -128,13 +129,11 @@
               <legend>Amount</legend>
               <input type="number" name="quantity" min="1" max="5">
             </fieldset>
-
+            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
+            
             <footer>
-              
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
               <button type="button"><span class="material-icons">favorite</span></button>
               <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              
               <a href="#">see more</a>
             </footer>
           </form>

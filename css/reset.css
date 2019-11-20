@@ -93,6 +93,7 @@ a {
 
 del {
   text-decoration: line-through;
+  font-size: 0.9em;
 }
 
 abbr[title], dfn[title] {

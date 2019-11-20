@@ -66,11 +66,20 @@
         margin: 1.5em 0 1em 0;            
     }
     
-    legend,dt,label {
+    legend,dt {
         font-weight: 600;
         display: inline;
     }
 
+    data {
+        display: block;
+        margin-block-end: 0.5em;
+    }
+    ins {
+        font-weight: 600;
+        font-size: 1.1em;
+        color: #D55858;
+        text-decoration: none;
+    }
 
-    
 }
