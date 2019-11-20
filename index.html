@@ -6,21 +6,19 @@
     <title>Document title</title>
     <meta name="description" content="[organic and luxury skincare brand]">
     <meta name="author" content="[Yiting Wu]">
-    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
+    <link rel="stylesheet" href="css/reset.css"> 
+    <!-- You may change this "Reset" to "Normalize" if preferred -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <!-- Site logo, replace with your own -->
-      <a href="index.html"><img src="img/bathotopia-logo.svg" alt="bathotopialogo"></a>
-
+    <header class="menubar">
       <!-- Navigation menu and toggle button (non-functional) -->
       <nav aria-label="Primary">
         <button type="button">
           <span class="material-icons">menu</span>
         </button>
-        <ul>
+        <ul class="menu">
           <li><a href="#">Bath and Shower</a>
             <ul>
               <li><a href="#">Bath Bombs</a></li>
@@ -33,6 +31,9 @@
           <li><a href="#">Body</a></li>
         </ul>
       </nav>
+      
+      <!-- Site logo, replace with your own -->
+      <a href="index.html" class="logo"><img src="img/bathotopia-logo.svg" alt="bathotopialogo"></a>
 
       <!-- Search for a product (non-functional) -->
       <form>
@@ -43,21 +44,20 @@
       </form>
 
       <!-- Additional nav links -->
-
       <ul>
         <li><a href="#"><span class="material-icons">favorite_border</span></a></li>
         <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
       </ul>
     </header>
 
-    <main>
+    <main class="Sale">
       <header>
-        <h1>Sale on [Category Name]</h1>
+        <h1>Sale on bath & Shower</h1>
 
         <!-- Filtering product form -->
         <form>
           <h2>Filters</h2>
-          <fieldset>
+          <fieldset class="sort">
             <label for="sort">Show</label>
             <select name="sort" id="sort">
               <option value="price-high">Price, highest to lowest</option>
@@ -65,7 +65,7 @@
               <option value="newest">Newest releases</option>
             </select>
           </fieldset>
-          <fieldset>
+          <fieldset class="color">
             <legend>Colour</legend>
             <ul>
               <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
@@ -75,7 +75,7 @@
               <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="sizes">
             <legend>Sizes</legend>
             <ol>
               <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
@@ -85,7 +85,7 @@
               <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
             </ol>
           </fieldset>
-          <fieldset>
+          <fieldset class="ratings">
             <legend>Ratings (above)</legend>
             <ol>
               <li>
@@ -117,16 +117,14 @@
         </form>
       </header>
 
-      <section>
-        <h2>Results</h2>
-
+      <section class="products">
         <!-- Product 1 -->
-        <article>
-          <header>
+        <article class="product bathbombs">
+          <header class="product image">
             <img src="img/bathbombs.jpg" alt="bathbombs Image">
           </header>
-          <h3>Dreamy Bathbomb</h3>
-          <p>You can golightly with this one or all in.Brazilian orange and cinnamon leaf oils. However you decide to go, you’ll feel amazing.</p>
+          <h3 class="name">Dreamy Bathbomb</h3>
+          <p class="subtext">You can golightly with this one or all in.Brazilian orange and cinnamon leaf oils. However you decide to go, you’ll feel amazing.</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
@@ -160,12 +158,12 @@
         </article>
 
         <!-- Product 2 -->
-        <article>
-          <header>
+        <article class="product soap">
+          <header class="product image">
             <img src="img/soap.jpg" alt="soap Image">
           </header>
-          <h3>Bohemian Soap</h3>
-          <p>Named for creative types, the bright, uplifting citrus scent is meant to stimulate creative streaks while keeping skin bright and clean.</p>
+          <h3 class="name">Bohemian Soap</h3>
+          <p class="subtext">Named for creative types, the bright, uplifting citrus scent is meant to stimulate creative streaks while keeping skin bright and clean.</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
@@ -199,12 +197,12 @@
         </article>
 
         <!-- Product 3 -->
-        <article>
-          <header>
+        <article class="product shower-gel">
+          <header class="product image">
             <img src="img/shower-gel.jpg" alt="shower gel Image">
           </header>
-          <h3>Super Soft Honey Shower gel</h3>
-          <p>With loads of moisturizing honey blended into a soothing lotus flower and tiger lily infusion, this self-preserving gel is gentle on dry or sensitive skin.</p>
+          <h3 class="name">Super Soft Honey Shower gel</h3>
+          <p class="subtext">With loads of moisturizing honey blended into a soothing lotus flower and tiger lily infusion, this self-preserving gel is gentle on dry or sensitive skin.</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
@@ -238,12 +236,12 @@
         </article>
   
         <!-- Product 4 -->
-        <article>
-          <header>
+        <article class="product body-oils">
+          <header class="product image">
             <img src="img/oil-lavender.jpg" alt="oil-lavender Image">
           </header>
-          <h3>Dreamtime Body Oils</h3>
-          <p> This oil is a helpful balancer for the skin and scalp, and is widely used across the skincare</p>
+          <h3 class="name">Dreamtime Body Oils</h3>
+          <p class="subtext"> This oil is a helpful balancer for the skin and scalp, and is widely used across the skincare</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
@@ -277,12 +275,12 @@
         </article>
 
         <!-- Product 5 -->
-        <article>
-          <header>
+        <article class="product himalayan-salt">
+          <header class="product image">
             <img src="img/himalayan-salt.jpg" alt="himalayan-salt Image">
           </header>
-          <h3>Magic Himalayan Salt</h3>
-          <p>Scrub off bad vibes with the mystical mint energy of Magic Crystals.</p>
+          <h3 class="name">Magic Himalayan Salt</h3>
+          <p class="subtext">Scrub off bad vibes with the mystical mint energy of Magic Crystals.</p>
           <form>
             <fieldset>
               <legend>Colours</legend>
