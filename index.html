@@ -19,11 +19,11 @@
           <span class="material-icons">menu</span>
         </button>
         <ul class="dropdown-content">
-          <li class="dropdown-menu"><a href="#">Bath and Shower</a>
+          <li class="dropdown-menu-bath" type="button"><a href="#">Bath</a>
             <ul class="dropdown-submenu">
-              <li><a href="#">Bath Bombs</a></li>
-              <li><a href="#">Bath Oils</a></li>
-              <li><a href="#">Bath Soap</a></li>
+              <li><a href="#">Bombs</a></li>
+              <li><a href="#">Oils</a></li>
+              <li><a href="#">Soap</a></li>
             </ul>
           </li>
           <li class="dropdown-menu"><a href="#">Hair</a></li>
@@ -52,12 +52,12 @@
 
     <main class="Sale">
       <header>
-        <h1>Sale on bath & Shower</h1>
+        <h1>Sale on Bath & Shower</h1>
 
         <!-- Filtering product form -->
         <form>
           <fieldset class="sort">
-          <Legend>Filter</Legend>
+          <label class="label-head">Filter</label>
             <select name="sort" id="sort">
               <option value="price-high">Price, highest to lowest</option>
               <option value="price-low">Price, lowest to highest</option>
@@ -65,7 +65,7 @@
             </select>
           </fieldset>
           <fieldset class="scent">
-            <legend for="scent">Scent</Legend>
+            <label for="scent" class="label-head">Scent</label>
             <ul>
               <li><input type="checkbox" name="Scent" value="Lavender" id="Lavender"> <label for="Lavender">Lavender</label></li>
               <li><input type="checkbox" name="Scent" value="Honey" id="Honey"> <label for="Honey">Honey</label></li>
@@ -73,7 +73,7 @@
             </ul>
           </fieldset>
           <fieldset class="ratings">
-            <legend>Ratings</legend>
+            <label class="label-head">Ratings</legend>
             <ol>
               <li>
                 <input type="checkbox" name="rating" value="4" id="aboveFour">
@@ -117,7 +117,7 @@
           <p class="subtext">You can golightly with this one or all in.Brazilian orange and cinnamon leaf oils. However you decide to go, you’ll feel amazing.</p>
           <form>
             <fieldset>
-              <legend>Scent</legend>
+              <label for="scent" class="label-head">Scent</label>
               <ul>
                 <li><label><input type="checkbox" name="scent" value="l"> Lavender</label></li>
                 <li><label><input type="checkbox" name="scent" value="h"> Honey</label></li>
@@ -126,7 +126,7 @@
             </fieldset>
 
             <fieldset>
-              <legend>Amount</legend>
+              <label class="label-head">Amount</legend>
               <input type="number" name="quantity" min="1" max="5">
             </fieldset>
 
@@ -143,7 +143,7 @@
         </article>
 
         <!-- Product 2 -->
-        <article class="product soap">
+        <article class="product-soap">
           <header class="product-image">
             <img src="img/soap.jpg" alt="soap Image">
           </header>
@@ -154,7 +154,7 @@
           <p class="subtext">Named for creative types, the bright, uplifting citrus scent is meant to stimulate creative streaks while keeping skin bright and clean.</p>
           <form>
             <fieldset>
-              <legend>Scent</legend>
+              <label for="scent" class="label-head">Scent</label>
               <ul>
                 <li><label><input type="checkbox" name="scent" value="l"> Lavender</label></li>
                 <li><label><input type="checkbox" name="scent" value="h"> Honey</label></li>
@@ -163,7 +163,7 @@
             </fieldset>
 
             <fieldset>
-              <legend>Amount</legend>
+              <label class="label-head">Amount</legend>
               <input type="number" name="quantity" min="1" max="5">
             </fieldset>
 
@@ -180,7 +180,7 @@
         </article>
 
         <!-- Product 3 -->
-        <article class="product shower-gel">
+        <article class="product-shower-gel">
           <header class="product-image">
             <img src="img/shower-gel.jpg" alt="shower gel Image">
           </header>
@@ -191,7 +191,7 @@
           <p class="subtext">With loads of moisturizing honey blended into a soothing lotus flower and tiger lily infusion, this self-preserving gel is gentle on dry or sensitive skin.</p>
           <form>
             <fieldset>
-              <legend>Scent</legend>
+              <label for="scent" class="label-head">Scent</label>
               <ul>
                 <li><label><input type="checkbox" name="scent" value="l"> Lavender</label></li>
                 <li><label><input type="checkbox" name="scent" value="h"> Honey</label></li>
@@ -200,7 +200,7 @@
             </fieldset>
 
             <fieldset>
-              <legend>Amount</legend>
+              <label class="label-head">Amount</legend>
               <input type="number" name="quantity" min="1" max="5">
             </fieldset>
 
@@ -217,7 +217,7 @@
         </article>
   
         <!-- Product 4 -->
-        <article class="product body-oils">
+        <article class="product-body-oils">
           <header class="product-image">
             <img src="img/oil-lavender.jpg" alt="oil-lavender Image">
           </header>
@@ -228,7 +228,7 @@
           <p class="subtext"> This oil is a helpful balancer for the skin and scalp, and is widely used across the skincare</p>
           <form>
             <fieldset>
-              <legend>Scent</legend>
+              <label for="scent" class="label-head">Scent</label>
               <ul>
                 <li><label><input type="checkbox" name="scent" value="l"> Lavender</label></li>
                 <li><label><input type="checkbox" name="scent" value="h"> Honey</label></li>
@@ -237,7 +237,7 @@
             </fieldset>
 
             <fieldset>
-              <legend>Amount</legend>
+              <label class="label-head">Amount</legend>
               <input type="number" name="quantity" min="1" max="5">
             </fieldset>
 
@@ -254,7 +254,7 @@
         </article>
 
         <!-- Product 5 -->
-        <article class="product himalayan-salt">
+        <article class="product-himalayan-salt">
           <header class="product-image">
             <img src="img/himalayan-salt.jpg" alt="himalayan-salt Image">
           </header>
@@ -265,7 +265,7 @@
           <p class="subtext">Scrub off bad vibes with the mystical mint energy of Magic Crystals.</p>
           <form>
             <fieldset>
-              <legend>Scent</legend>
+              <label for="scent" class="label-head">Scent</label>
               <ul>
                 <li><label><input type="checkbox" name="scent" value="l"> Lavender</label></li>
                 <li><label><input type="checkbox" name="scent" value="h"> Honey</label></li>
@@ -274,7 +274,7 @@
             </fieldset>
 
             <fieldset>
-              <legend>Amount</legend>
+              <label class="label-head">Amount</legend>
               <input type="number" name="quantity" min="1" max="5">
             </fieldset>
 

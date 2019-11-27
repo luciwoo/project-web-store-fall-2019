@@ -202,3 +202,23 @@ button, [type="button"], [type="submit"] {
   display: block;
   clear: both;
 }
+
+input[type=number] {
+  width: 3em;
+  padding: 0.3em 3em;
+  margin: 0.5em 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  width: fit-content;
+  padding: 0.3em 3em;
+  margin: 0.5em 0.5em;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
