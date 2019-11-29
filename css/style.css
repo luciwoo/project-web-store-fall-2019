@@ -147,7 +147,7 @@
         margin: 1.5em 0 0 0;            
     }
     
-    .label-head,dt {
+    .sort-label,.label-head,dt,legend {
         font-weight: 600;
         display: inline;
     }
