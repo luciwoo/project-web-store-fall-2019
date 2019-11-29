@@ -1,5 +1,4 @@
 /* mobile */
-/* @media screen and (max-width:500px) { */
     .menubar{
         background-color: white;
         position: fixed;
@@ -61,7 +60,7 @@
     .searchbtn {
         position: fixed;
         top: 1rem;
-        left: 72%;
+        left: 74%;
     }
 
     .nav-fav-btn {
@@ -79,7 +78,18 @@
     button {
         background-color: transparent;
         border: none;
-        margin-left: 1em;
+    }
+
+    .add-cart {
+        background-color:white;
+        border: solid 2px black;
+        padding: 0.2em 0.5em;
+        margin: 0.5em;
+    }
+
+    .filter-rating {
+        display: inline-block;
+        margin-right: 1.5em;
     }
 
     h1 {
@@ -203,12 +213,15 @@
         display: inline;
     }
 
+    .copyright {
+        text-align: left;
+    }
+
     .legal a {
         color: white;
         text-decoration: none;
         padding: 1em;
     }
-/* } */
 
 @media screen and (min-width:590px) {
     .menubar{
@@ -227,7 +240,7 @@
     .dropdown-content {
         display: inline;
         position: absolute;
-        width: max-content;
+        min-width: 20em;
         background-color: transparent;
         box-shadow: none;
     }
@@ -241,11 +254,12 @@
         display: none;
     }
 
-
     .logo {
-        display: block;
+        /* display: block; */
         width: 6rem;
-        position: fixed;
+        /* position: fixed; */
+        right: 0;
+        text-align: center;
     }
 
     form .search{
@@ -254,22 +268,22 @@
         top: 1rem;
         left: 40rem;
     }
-    .nav-cart-btn {
-        position: fixed;
-        top: 1.5rem;
-        left:90%;    
-        }
-
     .searchbtn {
-        position: relative;
-        top: 1.5em;
-        left: 72%;
+        position: fixed;
+        top: 1rem;
+        left: 78%;
     }
 
     .nav-fav-btn {
-        position: relative;
-        top: 0em;
-        left: 80%;
+        position: fixed;
+        top: 1rem;
+        left: 85%;
+    }
+
+    .nav-cart-btn {
+        position: fixed;
+        top: 1rem;
+        left: 92%;
     }
 
     main{
@@ -282,7 +296,4 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
     }
-
-    .pagination {
-
 }
