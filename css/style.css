@@ -204,7 +204,7 @@
         background-color: black;
         display: block;
         padding: 1em;
-        height: 4em;
+        min-height: 6em;
         color: white;
         font-size: 0.9em;
         bottom: 0;
