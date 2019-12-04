@@ -195,3 +195,102 @@ footer {
     padding: 1em;
 }
 
+@media screen and (min-width:590px) {
+    .menubar{
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        height: 5.5rem;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+    }
+
+    .dropdown {
+        width: fit-content;
+    }
+    .dropdown-content {
+        display: inline;
+        position: absolute;
+        min-width: 20em;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .dropdown-menu {
+        display: inline;
+        padding: 0.5em;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+
+    .logo {
+        /* display: block; */
+        width: 6rem;
+        /* position: fixed; */
+        right: 0;
+        text-align: center;
+    }
+
+    form .search{
+        position: fixed;
+        visibility: visible;
+        top: 1rem;
+        left: 40rem;
+    }
+    .searchbtn {
+        position: fixed;
+        top: 1rem;
+        left: 78%;
+    }
+
+    .nav-fav-btn {
+        position: fixed;
+        top: 1rem;
+        left: 85%;
+    }
+
+    .nav-cart-btn {
+        position: fixed;
+        top: 1rem;
+        left: 92%;
+    }
+
+    main{
+        position: relative;
+        margin-top: 6em;
+    }
+
+    .row-product-details {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4em;
+    }
+
+    h2 {
+        background-color: white;
+        color: black;
+        font-size: 1.5em;
+        margin-block-end: 0.5em;
+        padding:0.7em 0 0 0;
+    }
+
+    h3 {
+        margin-top: 1em;
+    }
+
+    dl {
+        margin-bottom: 0.7em;
+    }
+
+    .how-to-use {
+        margin-bottom: 2em;
+    }
+
+    footer {
+        bottom: 0;
+        margin-top: 3em;
+    }
+}
