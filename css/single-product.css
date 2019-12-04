@@ -167,6 +167,10 @@ fieldset a{
     margin-left: 1em;
 }
 
+dt {
+    display: none;
+}
+
 footer {
     width: 100%;
     background-color: black;

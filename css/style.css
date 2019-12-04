@@ -167,6 +167,10 @@
         margin-left: 1em;
     }
 
+    dt {
+        display: none;
+    }
+
     .pagination {
         display: block;
         padding: 1rem;
